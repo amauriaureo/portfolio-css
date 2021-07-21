@@ -1,0 +1,169 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #091f9b;
+    font-family: 'Yomogi', cursive;
+}
+
+
+ul {
+    list-style: none;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+
+body {
+    height: 100vh;
+    background-image:url(imagens/rosidi.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+header {
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 1px 1px 10px 1px #091f9b;
+}
+
+
+header ul {
+    display:flex;
+}
+
+
+header ul li {
+    padding: 10px;
+    border-right: 1px dashed #091f9b;
+}
+
+
+header ul li a {
+    transition: 350ms;
+}
+
+
+header ul li a:hover {
+    color: #ffffff;
+}
+
+
+header ul li:first-child {
+    border-left: 1px dashed #091f9b;
+}
+
+
+.container {
+    text-align: center;
+}
+
+
+.container .name h1 {
+    font-size: 50px;
+}
+
+
+.container .name h5 {
+    font-size: 25px;
+}
+
+
+#arrow {
+    font-size:44px;
+    cursor: pointer;
+    animation: blink 1s steps(3, start) infinite;
+}
+
+
+#about p {
+    font-size: 20px;
+}
+
+
+.form {
+    width:40%;
+    margin: 0 auto;
+    padding:55px;
+    margin-top:30px;
+}
+
+
+@keyframes blink {
+    to {
+        visibility: hidden;
+    }
+}
+
+
+#animation {
+    transition: 300ms;
+}
+
+
+.rotate {
+    transform: rotate(180deg);
+    transition: 300ms;
+}
+
+
+.active {
+    display: block !important;
+}
+
+
+.form input {
+    width: 50%;
+    padding:5px 10px;
+    border:none;
+    border-radius: 5px 0px 0px 5px
+}
+
+
+.form button {
+    width: 20%;
+    padding:5px 10px;
+    background: linear-gradient(to right, #ffffff 50%, #091f9b 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    color: white;
+    font-weight:600;
+    border:none;
+    cursor:pointer;
+    transition: all 300ms ease-out;
+    border-radius: 0px 5px 5px 0px;
+    margin-left: -10px;
+}
+
+
+.form button:hover {
+    background-position: left bottom;
+    color: #091f9b;
+
+}
+
+
+@media only screen and (max-width: 768px) {
+    .form {
+        width: 100%;
+    }
+}
+
+
+@media only screen and (max-width: 480px) {
+    .container .name h1 {
+        font-size: 30px;
+    }
+
+    .container .name h5 {
+        font-size: 15px;
+    }
+
+}
